@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-container {
+    
+    margin-top: 5vh;
+    display: flex;
+    justify-content: flex-start;
+    
+    
+}
+
+.header-container div {
+    
+    margin-left: 250px;
+}
+
+.hero-container {
+    
+    margin: 5vh 5vw;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+
+
+.aside1 {
+    
+    
+}
+
+.aside1 img {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.aside2 {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    
+    
+}
+
+.aside2 button {
+    color: hsl(257, 40%, 49%);
+    background-color: #ffffff;    
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid hsl(257, 40%, 49%);   
+    border-radius: 30px;
+  
+    width: 200px;
+}
+
+h1,p {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.icons-container {
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-right: 250px;
+}
+
+.icons-container div {
+    margin-right: 20px;
+}
+
+.icons-container img {
+    filter: brightness(0) invert(1);
+  }
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+
+ }
+
+ .attribution a { 
+
+    color: hsl(228, 45%, 44%);
+
+}
+@media only screen and (max-width: 1200px) {
+
+    .header-container {
+       justify-content: center;
+
+    }
+    .header-container div {
+        
+       margin-left: 0;
+    }
+  
+    .hero-container {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    .aside1 img {
+     
+      max-width: 500px;
+    }
+  
+    
+    .icons-container {
+      justify-content: center;
+      margin-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .header-container {
+      margin-top: 30px;
+      
+    }
+  
+    .header-container div {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .hero-container {
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+  
+    .aside1 img {
+      padding: 5px;
+    }
+  
+    .aside2 button {
+      width: 150px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .header-container {
+     margin-left: 20px;
+     margin-right: 20px;
+     
+    }
+  
+    .header-container div {
+      /*margin-left: 10px;*/
+    
+    }
+  
+    .hero-container {
+      margin-top:20px;
+      margin-left: 20px;
+    }
+  
+  
+    .aside2 button {
+      width: 120px;
+    }
+  }
